@@ -1,85 +1,40 @@
 
-# Module 3 -  Final Project Specifications
+# Northwind Traders Database Analysis
 
-## Introduction
+## Project Set-Up
 
-In this lesson, we'll review all the guidelines and specifications for the final project for Module 3.
+Contained in this repo are the following:
 
-## Objectives
+1. A **_Jupyter Notebook_** containing any code I've written for this project.
+2. An **_"Executive Summary" PowerPoint Presentation_** that explains the hypothesis tests I ran, my findings, and their relevance to company stakeholders.
+3. The **_Northwind SQL Database_** along with a visual schema of the databases included.
+4. A **_py script for Welch's T-Test_** that I used in the analysis.
 
-* Understand all required aspects of the Final Project for Module 3
-* Understand all required deliverables
-* Understand what constitutes a successful project
+### Methodologies Used
 
-### Final Project Summary
+- Hypothesis Testin
+- Welch's T-Test
+- Cohen's d
+- ANOVA test
+- Tukey's HSD Test
 
-Another module down--you're half way there!
+## Objective:
 
-<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/halfway-there.gif'>
-
-For the culmination of Module 3, you just need to complete the final project!
+To conduct analysis using statistical analysis, hypothesis testing, and SQL on the Northwind Traders Database to identify areas for improved performance. This included targeted analysis of improvements to their discount system, employee performance monitoring, order processing time per shipping company, and understanding market demand for certain categories of goods.
 
 ### The Project
 
-For this project, you'll be working with the Northwind database--a free, open-source dataset created by Microsoft containing data from a fictional company. You probably remember the Northwind database from our section on Advanced SQL. Here's the schema for the Northwind database:
+For this project, I worked with the Northwind database--a free, open-source dataset created by Microsoft containing data from a fictional company. Here's the schema for the Northwind database:
 
 <img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/Northwind_ERD_updated.png'>
 
-The goal of this project is to test your ability to gather information from a real-world database and use your knowledge of statistical analysis and hypothesis testing to generate analytical insights that can be of value to the company.
+At first, I set out to answer the following question: **_Does discount amount have a statistically significant effect on the quantity of a product in an order? If so, at what level(s) of discount?_**  I then developed 3 other questions, along with corresponding null and alternative hypotheses per question.  
 
-## The Deliverables
-
-The goal of your project is to query the database to get the data needed to perform a statistical analysis.  In this statistical analysis, you'll need to perform a hypothesis test (or perhaps several) to answer the following question:
-
-**_Does discount amount have a statistically significant effect on the quantity of a product in an order? If so, at what level(s) of discount?_**
-
-In addition to answering this question with a hypothesis test, you will also need to come up with **_at least 3 other hypotheses to test on your own_**.  These can by anything that you think could be imporant information for the company.
-
-For this hypothesis, be sure to specify both the **_null hypothesis_** and the **_alternative hypothesis_** for your question.  You should also specify if this is one-tail or a two-tail test.
-
-To complete this project, you will need to turn in the following 3 deliverables:
-
-1. A **_Jupyter Notebook_** containing any code you've written for this project.
-2. A **_[Blog Post](https://github.com/learn-co-curriculum/dsc-welcome-blogging)_**.
-3. An **_"Executive Summary" PowerPoint Presentation_** that explains the hypothesis tests you ran, your findings, and their relevance to company stakeholders.  
-
-### Jupyter Notebook Must-Haves
-
-For this project, your jupyter notebook should meet the following specifications:
-
-**_Organization/Code Cleanliness_**
-
-* The notebook should be well organized, easy to follow, and code is commented where appropriate.  
-<br>  
-    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code. All functions have docstrings that act as professional-quality documentation.  
-<br>      
-* The notebook is written to technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.  
-<br>    
-* Any SQL code written to source data should also be included.  
 
 **_Findings_**
+- With a discount, the average quantity ordered of a product is 27, compared to 22 without a discount.
+- US employees manage an average order total of 121.2 orders, compared
+to UK employees, who average 56 orders.
+- Across the 3 Shipping Companies, United Package has the lengthiest processing time of 9.2 days on average, compared to Federal Shipping’s average of 7.5 days.
+- There is no interaction between Category and Customer Region regarding Total Revenue per category.
 
-* Your notebook should clearly show how you arrived at your results for each hypothesis test, including how you calculated your p-values.   
-<br>
-* You should also include any other statistics that you find relevant to your analysis, such as effect size.
-
-### Blog Post Must-Haves
-
-Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging) for the technical requirements and blog ideas.
-
-
-### Executive Summary Must-Haves
-
-Your presentation should:
-
-* Contain between 5-10 professional quality slides detailing:
-<br>  
-    * A high-level overview of your methodology  
-    <br>  
-    * The results of your hypothesis tests  
-    <br>  
-    * Any real-world recommendations you would like to make based on your findings (ask yourself--why should the executive team care about what you found? How can your findings help the company?)  
-    <br>  
-* Take no more than 5 minutes to present  
-<br>  
-* Avoid technical jargon and explain results in a clear, actionable way for non-technical audiences.  
